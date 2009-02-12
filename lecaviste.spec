@@ -1,7 +1,7 @@
 %define name lecaviste
 %define version 0.5
 %define fileversion 0.5
-%define release %mkrel 0.5
+%define release %mkrel 2
 %define title Le Caviste
 
 Summary: Wine cellar managing application
@@ -17,7 +17,11 @@ BuildRequires:	qt4-devel	>= 4.3
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 Requires: qt4-common >= 4.3
+%if %mdkversion < 200901
 Requires: qt4-database-plugin-sqlite-lib >= 4.3
+%else
+Requires: qt4-database-plugin-sqlite >= 4.3
+%endif
 			
 %description
 Wine cellar managing application
