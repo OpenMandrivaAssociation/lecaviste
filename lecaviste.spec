@@ -1,7 +1,7 @@
 %define name lecaviste
 %define version 0.5
 %define fileversion 0.5
-%define release %mkrel 3
+%define release %mkrel 4
 %define title Le Caviste
 
 Summary: Wine cellar managing application
