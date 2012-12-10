@@ -1,7 +1,7 @@
 %define name lecaviste
 %define version 0.5
 %define fileversion 0.5
-%define release %mkrel 4
+%define release %mkrel 3
 %define title Le Caviste
 
 Summary: Wine cellar managing application
@@ -105,4 +105,20 @@ mkdir -p %{buildroot}/%{_liconsdir}
 %dir %{_datadir}/%{name}
 %lang(fr) %{_datadir}/%{name}/%{name}_fr.qm
 %lang(fr) %{_datadir}/%{name}/qt_fr.qm
+
+
+
+%changelog
+* Wed Feb 18 2009 Jerome Martin <jmartin@mandriva.org> 0.5-3mdv2009.1
++ Revision: 342632
+- Fixed archive
+
+* Thu Feb 12 2009 Jerome Martin <jmartin@mandriva.org> 0.5-2mdv2009.1
++ Revision: 339813
+- Fixed Requires for qt4.5
+
+* Wed Feb 04 2009 Jerome Martin <jmartin@mandriva.org> 0.5-0.5mdv2009.1
++ Revision: 337570
+- import lecaviste
+
 
