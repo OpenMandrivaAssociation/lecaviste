@@ -10,7 +10,7 @@ Version: %{version}
 Release: %{release}
 License: GPLv2
 Group: Editors
-Url: http://www.lecaviste.org
+Url: https://www.lecaviste.org
 Source:  http://www.lecaviste.org/download/src/%{name}-%{fileversion}.tar.bz2
 
 BuildRequires:	qt4-devel	>= 4.3
