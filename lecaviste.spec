@@ -13,6 +13,11 @@ Group: Editors
 Url: https://www.lecaviste.org
 Source:  http://www.lecaviste.org/download/src/%{name}-%{fileversion}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	qt4-devel	>= 4.3
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
